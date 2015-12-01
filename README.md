@@ -1,3 +1,3 @@
 # Zgoodies
 
-Some bootstrap and jQuery plugins or Zikula
+Some bootstrap and jQuery plugins for Zikula
