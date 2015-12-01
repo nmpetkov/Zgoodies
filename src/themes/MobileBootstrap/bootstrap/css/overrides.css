@@ -1,0 +1,120 @@
+/* Overrides to bootstrap core */
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+ul, ol {
+  margin: -5px 0 10px 15px;
+}
+.sidebar-nav {
+    padding: 10px;
+}
+#nav li a.active{
+  color:#000000;
+}
+
+.navbar .brand {
+  padding: 10px 10px 0 10px;
+  margin: 0 0 0 -5px;
+}
+.navbar-brand > img {
+  margin: -5px -2px 0 0;
+}
+.navbar-brand {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.hero-unit {
+  padding: 10px;
+  /* margin-bottom: 150px; */
+  font-size: 14px;
+  line-height: 18px;
+}
+.hero-unit h1{
+  margin-bottom: 12px;
+  margin-top: -12px;
+  font-size: 24px;
+}
+.hero-unit h3{
+  margin-top: -12px;
+  margin-bottom: -5px;
+  font-size: 16px;
+}
+h3, .h3 {
+  font-size: 16px;
+}
+.navbar-bgimages .nav > li > a {
+  padding-left: 18px;
+}
+.z-icon-es-rss {
+  margin-top: 10px;
+}
+.navbar-noborder {
+  margin-top: -18px;
+  margin-bottom: 20px;
+  border: 0;
+  height: 80%;
+}
+.navbar {
+    
+}
+/*@media (max-width: 480px) {
+.z-adminlinkheader {display:none;}
+.z-adminmodtitle {display:none;}
+.z-menutexttitle {display:none;}
+textarea,
+input[type="text"] {
+	width: 100%;
+	height:100%;
+	max-width: 260px;
+	max-height: 90px;
+	box-sizing: border-box;
+}
+}*/
+
+/*@media (max-width: 1200px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+}*/
+.btn a:link {
+  text-decoration: none;
+}
+.list-group li a:hover {
+  text-decoration: none;
+}
+.list-group li:hover,
+.list-group li.hover {
+    background-color: #CFCFCF;
+}

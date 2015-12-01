@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zikula 1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-01 22:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: version.php:3
+msgid "MobileBootstrap"
+msgstr ""
+
+#: version.php:4
+msgid "Theme based on Bootstrap"
+msgstr ""
+
+#: templates/modules/Users/users_user_main.tpl:1 templates/master.tpl:123
+#: templates/includes/topmenu.tpl:3
+msgid "My account"
+msgstr ""
+
+#: templates/modules/Admin/admin_admin_adminpanel.tpl:27
+msgid "There are currently no modules in this category."
+msgstr ""
+
+#: templates/master.tpl:55
+msgid "Toggle navigation"
+msgstr ""
+
+#: templates/master.tpl:70 templates/includes/topmenu.tpl:1
+msgid "Home"
+msgstr ""
+
+#: templates/master.tpl:73
+msgid "Settings"
+msgstr ""
+
+#: templates/master.tpl:77
+msgid "Extensions"
+msgstr ""
+
+#: templates/master.tpl:81
+msgid "Blocks"
+msgstr ""
+
+#: templates/master.tpl:85
+msgid "Users"
+msgstr ""
+
+#: templates/master.tpl:89
+msgid "Groups"
+msgstr ""
+
+#: templates/master.tpl:93
+msgid "Permission rules"
+msgstr ""
+
+#: templates/master.tpl:97
+msgid "Themes"
+msgstr ""
+
+#: templates/master.tpl:99 templates/master.tpl:201
+#: templates/includes/topmenu.tpl:10
+msgid "Full site version"
+msgstr ""
+
+#: templates/master.tpl:99 templates/includes/topmenu.tpl:10
+msgid "Full version"
+msgstr ""
+
+#: templates/master.tpl:121
+msgid "Administration"
+msgstr ""
+
+#: templates/master.tpl:124
+msgid "My profile"
+msgstr ""
+
+#: templates/master.tpl:126
+msgid "Sign out"
+msgstr ""
+
+#: templates/master.tpl:207
+msgid "Design"
+msgstr ""
+
+#: templates/includes/topmenu.tpl:5
+msgid "Site search"
+msgstr ""
+
+#: templates/includes/topmenu.tpl:6
+msgid "Contact"
+msgstr ""

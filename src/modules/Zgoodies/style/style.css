@@ -1,0 +1,6 @@
+.marquee {
+  overflow: hidden;
+  border:1px solid #e3e3e3;
+  background: #f5f5f5;
+  padding: 10px;
+}

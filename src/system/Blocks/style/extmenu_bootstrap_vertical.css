@@ -1,0 +1,33 @@
+.extmenu-vertical {
+    padding: 0;
+    background-color: #fff;
+    background-image: none;
+    border-color: #ccc;
+}
+.extmenu-vertical ul {
+    width: 100%;
+}
+.extmenu-vertical ul li {
+    float: none;
+    border-bottom: 1px solid #ccc;
+}
+.extmenu-vertical .navbar-nav {
+    margin: 0;
+}
+.extmenu-vertical .navbar-nav > li > a {
+    color: #2fa4e7;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.extmenu-vertical .navbar-nav > .active > a, .extmenu-vertical .navbar-nav > .active > a:hover, .extmenu-vertical .navbar-nav > .active > a:focus {
+    color: #2fa4e7;
+    background-color: #d5d5d5;
+}
+.extmenu-vertical .navbar-nav > li > a:hover, .extmenu-vertical .navbar-nav > li > a:focus {
+    color: #2fa4e7;
+    background-color: #d5d5d5;
+}
+.navbar-default {
+    border-color: #ccc;
+}

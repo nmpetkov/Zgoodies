@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zikula 1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-01 22:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/Zgoodies/Block/Slider.php:26
+msgid "Zgoodies Nivo Slider block"
+msgstr ""
+
+#: lib/Zgoodies/Block/Marquee.php:26
+msgid "Zgoodies Marquee block"
+msgstr ""
+
+#: lib/Zgoodies/Version.php:13
+msgid "Zgoodies"
+msgstr ""
+
+#: lib/Zgoodies/Version.php:14
+msgid "zgoodies"
+msgstr ""
+
+#: lib/Zgoodies/Version.php:15
+msgid "Goodies for Zikula"
+msgstr ""
+
+#: lib/Zgoodies/Version.php:27
+msgid "Zgoodies Items Hooks"
+msgstr ""
+
+#: lib/Zgoodies/Controller/Admin.php:44
+msgid "Done! Updated the Zgoodies configuration."
+msgstr ""
+
+#: templates/admin/info.tpl:4
+msgid "Goodies info"
+msgstr ""
+
+#: templates/admin/info.tpl:8
+msgid "This module integrates various goodies in various places you may need."
+msgstr ""
+
+#: templates/admin/info.tpl:9
+msgid "They are available as blocks."
+msgstr ""
+
+#: templates/admin/info.tpl:11
+msgid "jQuery Marquee"
+msgstr ""
+
+#: templates/admin/info.tpl:12 templates/admin/info.tpl:16
+msgid "Purpose"
+msgstr ""
+
+#: templates/admin/info.tpl:13 templates/admin/info.tpl:17
+msgid "Project"
+msgstr ""
+
+#: templates/admin/info.tpl:15
+msgid "jQuery Nivo Slider"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:2 templates/blocks/marquee_modify.tpl:2
+msgid "Block display"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:4 templates/blocks/marquee_modify.tpl:4
+msgid "Template to use"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:12
+#: templates/blocks/marquee_modify.tpl:12
+msgid "Wrap block"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:14 templates/blocks/slider_modify.tpl:89
+#: templates/blocks/slider_modify.tpl:96
+#: templates/blocks/slider_modify.tpl:103
+#: templates/blocks/slider_modify.tpl:110
+#: templates/blocks/slider_modify.tpl:117
+#: templates/blocks/slider_modify.tpl:124
+#: templates/blocks/marquee_modify.tpl:14
+#: templates/blocks/marquee_modify.tpl:65
+#: templates/blocks/marquee_modify.tpl:72
+#: templates/blocks/marquee_modify.tpl:79
+msgid "Yes"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:15 templates/blocks/slider_modify.tpl:90
+#: templates/blocks/slider_modify.tpl:97
+#: templates/blocks/slider_modify.tpl:104
+#: templates/blocks/slider_modify.tpl:111
+#: templates/blocks/slider_modify.tpl:118
+#: templates/blocks/slider_modify.tpl:125
+#: templates/blocks/marquee_modify.tpl:15
+#: templates/blocks/marquee_modify.tpl:66
+#: templates/blocks/marquee_modify.tpl:73
+#: templates/blocks/marquee_modify.tpl:80
+msgid "No"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:15
+#: templates/blocks/marquee_modify.tpl:15
+msgid "direct display"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:19
+#: templates/blocks/marquee_modify.tpl:19
+msgid "Block title (can be blank, HTML allowed)"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:29
+#: templates/blocks/marquee_modify.tpl:29
+msgid "Block content"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:31
+#: templates/blocks/marquee_modify.tpl:31
+msgid "Load visual editor"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:34
+#: templates/blocks/marquee_modify.tpl:34
+msgid "When checked, visual editor will load on next block edit."
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:38
+msgid "Slider content (HTML allowed)"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:41
+msgid "One or more valid images (image tags). They are source for slides."
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:42
+msgid ""
+"Title attribute is optional, and if exists - will show title on the "
+"respective slide."
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:46
+msgid "Nivo Slider Theme"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:54
+msgid "Effect"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:56
+msgid "One or more keywords (comma delimited list). Allowed: "
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:63
+msgid "Slices (for slice animations)"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:67
+msgid "Box columns (for box animations)"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:71
+msgid "Box rows (for box animations)"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:75
+msgid "Slide transition speed (ms)"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:79
+msgid "How long each slide will show (ms)"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:83
+msgid "Starting Slide (0 is first)"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:87
+msgid "Random start"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:94
+msgid "Next & Prev navigation"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:101
+msgid "1,2,3... navigation"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:108
+msgid "Thumbnails for navigation"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:115
+msgid "Stop on hover"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:122
+msgid "Force manual transitions"
+msgstr ""
+
+#: templates/blocks/slider.tpl:14
+msgid "Prev"
+msgstr ""
+
+#: templates/blocks/slider.tpl:14
+msgid "Next"
+msgstr ""
+
+#: templates/blocks/marquee_modify.tpl:38
+msgid "Marquee content (HTML allowed)"
+msgstr ""
+
+#: templates/blocks/marquee_modify.tpl:42
+msgid "Marquee duration (ms)"
+msgstr ""
+
+#: templates/blocks/marquee_modify.tpl:46
+msgid "Marquee gap (cahrs)"
+msgstr ""
+
+#: templates/blocks/marquee_modify.tpl:50
+msgid "Marquee delay before start (ms)"
+msgstr ""
+
+#: templates/blocks/marquee_modify.tpl:54
+msgid "Marquee direction"
+msgstr ""
+
+#: templates/blocks/marquee_modify.tpl:56
+msgid "left"
+msgstr ""
+
+#: templates/blocks/marquee_modify.tpl:57
+msgid "right"
+msgstr ""
+
+#: templates/blocks/marquee_modify.tpl:58
+msgid "up"
+msgstr ""
+
+#: templates/blocks/marquee_modify.tpl:59
+msgid "down"
+msgstr ""
+
+#: templates/blocks/marquee_modify.tpl:63
+msgid "Marquee duplicated"
+msgstr ""
+
+#: templates/blocks/marquee_modify.tpl:70
+msgid "Pause on hover"
+msgstr ""
+
+#: templates/blocks/marquee_modify.tpl:77
+msgid "Pause on cycle"
+msgstr ""
