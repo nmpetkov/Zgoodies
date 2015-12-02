@@ -44,10 +44,19 @@ class Zgoodies_Block_Marquee extends Zikula_Controller_AbstractBlock
         }
         $vars = BlockUtil::varsFromContent($blockinfo['content']);
 
-        // block title
         $lang = ZLanguage::getLanguageCode();
+
+        // block title
         if (isset($vars['block_title'][$lang]) && !empty($vars['block_title'][$lang])) {
             $blockinfo['title'] = $vars['block_title'][$lang];
+        }
+
+        // marquee content
+        if (isset($vars['marquee_content'][$lang]) && !empty($vars['marquee_content'][$lang])) {
+            $vars['marquee_content_lang'] = $vars['marquee_content'][$lang];
+        }
+        if (!isset($vars['marquee_content'])) {
+            $vars['marquee_content_lang'] = '';
         }
 
         $this->view->assign('vars', $vars);
@@ -95,8 +104,13 @@ class Zgoodies_Block_Marquee extends Zikula_Controller_AbstractBlock
         }
 
         // set default values - content
-        if (!isset($vars['marquee_content'])) {
-            $vars['marquee_content'] = '';
+        if (!isset($vars['marquee_content']) || !is_array($vars['marquee_content'])) {
+            $vars['marquee_content'] = array();
+        }
+        foreach (array_keys($languages) as $lang) {
+            if (!array_key_exists($lang, $vars['marquee_content'])) {
+                $vars['marquee_content'][$lang] = '';
+            }
         }
         if (!isset($vars['marquee_content_editor'])) {
             $vars['marquee_content_editor'] = true;
@@ -142,7 +156,7 @@ class Zgoodies_Block_Marquee extends Zikula_Controller_AbstractBlock
         $vars['block_template'] = FormUtil::getPassedValue('block_template', 'marquee.tpl', 'POST');
         $vars['block_title'] = FormUtil::getPassedValue('block_title', array(), 'POST');
         $vars['block_wrap'] = FormUtil::getPassedValue('block_wrap', true, 'POST');
-        $vars['marquee_content'] = FormUtil::getPassedValue('marquee_content', '', 'POST');
+        $vars['marquee_content'] = FormUtil::getPassedValue('marquee_content', array(), 'POST');
         $vars['marquee_content_editor'] = FormUtil::getPassedValue('marquee_content_editor', false, 'POST');
         $vars['marquee_duration'] = FormUtil::getPassedValue('marquee_duration', 15000, 'POST');
         $vars['marquee_gap'] = FormUtil::getPassedValue('marquee_gap', 200, 'POST');

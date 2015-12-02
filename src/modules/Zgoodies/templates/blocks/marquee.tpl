@@ -16,5 +16,5 @@ jQuery(document).ready(function () {
 </script>
 {/pageaddvarblock}
 <div class="marquee marquee-{$bid}">
-    {$vars.marquee_content|safehtml}
+    {$vars.marquee_content_lang|safehtml}
 </div>

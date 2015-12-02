@@ -34,10 +34,15 @@
             <p class="z-formnote z-sub">{gt text='When checked, visual editor will load on next block edit.'}</p>
         </div>
     </div>
-    <div class="z-formrow">
-        <label for="marquee_content">{gt text="Marquee content (HTML allowed)"}</label>
-        <textarea id="marquee_content" name="marquee_content" cols="50" rows="5"{if !$vars.marquee_content_editor} class="noeditor"{/if}>{$vars.marquee_content|safehtml}</textarea>
-    </div>
+    <fieldset>
+        <legend>{gt text="Marquee content (HTML allowed)"}</legend>
+        {foreach from=$languages key=code item=name}
+        <div class="z-formrow">
+            <label for="marquee_content_{$code}">{$name}</label>
+            <textarea id="marquee_content_{$code}" name="marquee_content[{$code}]" cols="50" rows="4"{if !$vars.marquee_content_editor} class="noeditor"{/if}>{$vars.marquee_content.$code|safehtml}</textarea>
+        </div>
+        {/foreach}
+    </fieldset>
     <div class="z-formrow">
         <label for="marquee_duration">{gt text='Marquee duration (ms)'}</label>
         <input id="marquee_duration" type="text" name="marquee_duration" value="{$vars.marquee_duration|safetext}" />
