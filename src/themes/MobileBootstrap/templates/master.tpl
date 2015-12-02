@@ -115,7 +115,7 @@ jQuery(document).ready(function () {
                     {if $coredata.logged_in}
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="glyphicon glyphicon-user"></i> {user|ucwords}{*userwelcome|ucwords*}<span class="caret"></span>
+                                <i class="fa fa-user"></i> {user|ucwords}{*userwelcome|ucwords*}<span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu">
                             {checkpermissionblock component='.*' instance='.*' level=ACCESS_ADMIN}
