@@ -34,15 +34,20 @@
             <p class="z-formnote z-sub">{gt text='When checked, visual editor will load on next block edit.'}</p>
         </div>
     </div>
-    <div class="z-formrow">
-        <label for="slider_content">{gt text="Slider content (HTML allowed)"}</label>
-        <textarea id="slider_content" name="slider_content" cols="50" rows="5"{if !$vars.slider_content_editor} class="noeditor"{/if}>{$vars.slider_content|safehtml}</textarea>
+    <fieldset>
+        <legend>{gt text="Slider content (HTML allowed)"}</legend>
         <div class="z-informationmsg z-formnote nl-round">
             {gt text="One or more valid images (image tags). They are source for slides."}<br />
             {gt text="Title attribute is optional, and if exists - will show title on the respective slide."}
         </div>
-    </div>
-    <div class="z-formrow">
+        {foreach from=$languages key=code item=name}
+        <div class="z-formrow">
+            <label for="slider_content_{$code}">{$name}</label>
+            <textarea id="slider_content_{$code}" name="slider_content[{$code}]" cols="50" rows="4"{if !$vars.slider_content_editor} class="noeditor"{/if}>{$vars.slider_content.$code|safehtml}</textarea>
+        </div>
+        {/foreach}
+    </fieldset>
+        <div class="z-formrow">
         <label for="slider_theme">{gt text="Nivo Slider Theme"}</label>
         <select id="slider_theme" name="slider_theme">
             {foreach from=$pluginthemes item=plugintheme}

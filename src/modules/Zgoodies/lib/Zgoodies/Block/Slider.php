@@ -50,6 +50,14 @@ class Zgoodies_Block_Slider extends Zikula_Controller_AbstractBlock
             $blockinfo['title'] = $vars['block_title'][$lang];
         }
 
+        // slider content
+        if (isset($vars['slider_content'][$lang]) && !empty($vars['slider_content'][$lang])) {
+            $vars['slider_content_lang'] = $vars['slider_content'][$lang];
+        }
+        if (!isset($vars['slider_content'])) {
+            $vars['slider_content_lang'] = '';
+        }
+
         $this->view->assign('vars', $vars);
         $this->view->assign('bid', $blockinfo['bid']);
 
@@ -99,8 +107,13 @@ class Zgoodies_Block_Slider extends Zikula_Controller_AbstractBlock
         }
 
         // set default values - content
-        if (!isset($vars['slider_content'])) {
-            $vars['slider_content'] = '';
+        if (!isset($vars['slider_content']) || !is_array($vars['slider_content'])) {
+            $vars['slider_content'] = array();
+        }
+        foreach (array_keys($languages) as $lang) {
+            if (!array_key_exists($lang, $vars['slider_content'])) {
+                $vars['slider_content'][$lang] = '';
+            }
         }
         if (!isset($vars['slider_content_editor'])) {
             $vars['slider_content_editor'] = true;
@@ -170,7 +183,7 @@ class Zgoodies_Block_Slider extends Zikula_Controller_AbstractBlock
         $vars['block_template'] = FormUtil::getPassedValue('block_template', 'slider.tpl', 'POST');
         $vars['block_title'] = FormUtil::getPassedValue('block_title', array(), 'POST');
         $vars['block_wrap'] = FormUtil::getPassedValue('block_wrap', true, 'POST');
-        $vars['slider_content'] = FormUtil::getPassedValue('slider_content', '', 'POST');
+        $vars['slider_content'] = FormUtil::getPassedValue('slider_content', array(), 'POST');
         $vars['slider_content_editor'] = FormUtil::getPassedValue('slider_content_editor', false, 'POST');
         $vars['slider_theme'] = FormUtil::getPassedValue('slider_theme', 'default', 'POST');
         $vars['slider_effect'] = FormUtil::getPassedValue('slider_effect', 'random', 'POST');

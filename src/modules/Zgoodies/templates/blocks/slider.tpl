@@ -21,6 +21,6 @@ jQuery(window).load(function() {
 <div class="slider-wrapper theme-{$vars.slider_theme}">
     <div class="ribbon"></div>
     <div id="nivoslider-{$bid}" class="nivoSlider">
-        {$vars.slider_content|safehtml}
+        {$vars.slider_content_lang|safehtml}
     </div>
 </div>
