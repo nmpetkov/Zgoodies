@@ -57,6 +57,12 @@ class Zgoodies_Block_Slider extends Zikula_Controller_AbstractBlock
         if (!isset($vars['slider_content'])) {
             $vars['slider_content_lang'] = '';
         }
+        if (isset($vars['slider_htmlcaption'][$lang]) && !empty($vars['slider_htmlcaption'][$lang])) {
+            $vars['slider_htmlcaption_lang'] = html_entity_decode($vars['slider_htmlcaption'][$lang], null, 'UTF-8');
+        }
+        if (!isset($vars['slider_htmlcaption'])) {
+            $vars['slider_htmlcaption_lang'] = '';
+        }
 
         $this->view->assign('vars', $vars);
         $this->view->assign('bid', $blockinfo['bid']);
@@ -113,6 +119,14 @@ class Zgoodies_Block_Slider extends Zikula_Controller_AbstractBlock
         foreach (array_keys($languages) as $lang) {
             if (!array_key_exists($lang, $vars['slider_content'])) {
                 $vars['slider_content'][$lang] = '';
+            }
+        }
+        if (!isset($vars['slider_htmlcaption']) || !is_array($vars['slider_htmlcaption'])) {
+            $vars['slider_htmlcaption'] = array();
+        }
+        foreach (array_keys($languages) as $lang) {
+            if (!array_key_exists($lang, $vars['slider_htmlcaption'])) {
+                $vars['slider_htmlcaption'][$lang] = '';
             }
         }
         if (!isset($vars['slider_content_editor'])) {
@@ -184,6 +198,7 @@ class Zgoodies_Block_Slider extends Zikula_Controller_AbstractBlock
         $vars['block_title'] = FormUtil::getPassedValue('block_title', array(), 'POST');
         $vars['block_wrap'] = FormUtil::getPassedValue('block_wrap', true, 'POST');
         $vars['slider_content'] = FormUtil::getPassedValue('slider_content', array(), 'POST');
+        $vars['slider_htmlcaption'] = FormUtil::getPassedValue('slider_htmlcaption', array(), 'POST');
         $vars['slider_content_editor'] = FormUtil::getPassedValue('slider_content_editor', false, 'POST');
         $vars['slider_theme'] = FormUtil::getPassedValue('slider_theme', 'default', 'POST');
         $vars['slider_effect'] = FormUtil::getPassedValue('slider_effect', 'random', 'POST');

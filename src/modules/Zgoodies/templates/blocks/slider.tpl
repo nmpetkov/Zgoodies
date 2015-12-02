@@ -23,4 +23,5 @@ jQuery(window).load(function() {
     <div id="nivoslider-{$bid}" class="nivoSlider">
         {$vars.slider_content_lang|safehtml}
     </div>
+    {$vars.slider_htmlcaption_lang}
 </div>

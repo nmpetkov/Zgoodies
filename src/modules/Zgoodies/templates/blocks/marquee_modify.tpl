@@ -39,7 +39,7 @@
         {foreach from=$languages key=code item=name}
         <div class="z-formrow">
             <label for="marquee_content_{$code}">{$name}</label>
-            <textarea id="marquee_content_{$code}" name="marquee_content[{$code}]" cols="50" rows="4"{if !$vars.marquee_content_editor} class="noeditor"{/if}>{$vars.marquee_content.$code|safehtml}</textarea>
+            <textarea id="marquee_content_{$code}" name="marquee_content[{$code}]" cols="50" rows="4"{if !$vars.marquee_content_editor} class="noeditor"{/if}>{$vars.marquee_content.$code|safetext}</textarea>
         </div>
         {/foreach}
     </fieldset>

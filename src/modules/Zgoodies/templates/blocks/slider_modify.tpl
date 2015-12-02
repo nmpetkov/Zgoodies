@@ -42,8 +42,12 @@
         </div>
         {foreach from=$languages key=code item=name}
         <div class="z-formrow">
-            <label for="slider_content_{$code}">{$name}</label>
-            <textarea id="slider_content_{$code}" name="slider_content[{$code}]" cols="50" rows="4"{if !$vars.slider_content_editor} class="noeditor"{/if}>{$vars.slider_content.$code|safehtml}</textarea>
+            <label for="slider_content_{$code}">{gt text="Images"} ({$name})</label>
+            <textarea id="slider_content_{$code}" name="slider_content[{$code}]" cols="50" rows="4"{if !$vars.slider_content_editor} class="noeditor"{/if}>{$vars.slider_content.$code|safetext}</textarea>
+        </div>
+        <div class="z-formrow">
+            <label for="slider_htmlcaption_{$code}">{gt text="HTML captions"} ({$name})</label>
+            <textarea id="slider_htmlcaption_{$code}" name="slider_htmlcaption[{$code}]" cols="50" rows="4"{if !$vars.slider_content_editor} class="noeditor"{/if}>{$vars.slider_htmlcaption.$code|safetext}</textarea>
         </div>
         {/foreach}
     </fieldset>
