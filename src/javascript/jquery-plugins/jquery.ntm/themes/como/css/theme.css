@@ -1,8 +1,12 @@
-
+.tree-menu {
+  padding: 0;
+  background-color: #fff;
+  border-color: #ccc;
+}
 .tree-menu ul { list-style: none; }
 
 .tree-menu > ul {
-  padding: 0;
+  padding: 1px;
   margin: 0;
 }
 
