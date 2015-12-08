@@ -1,4 +1,5 @@
-{pageaddvar name='javascript' value='javascript/jquery-plugins/navgoco/jquery.cookie.js'}{* http://www.komposta.net/article/navgoco *}
+{* http://www.komposta.net/article/navgoco *}
+{if !isset($modvars.Zgoodies.navgoco_save) || $modvars.Zgoodies.navgoco_save}{pageaddvar name='javascript' value='javascript/jquery-plugins/navgoco/jquery.cookie.js'}{/if}
 {pageaddvar name='javascript' value='javascript/jquery-plugins/navgoco/jquery.navgoco.js'}
 {pageaddvar name="stylesheet" value='javascript/jquery-plugins/navgoco/jquery.navgoco-como.css'}
 <div id="navcomo-{$blockinfo.bid}" class="navcomowrap">
@@ -12,6 +13,10 @@
 </div>
 <script type="text/javascript">
 jQuery(document).ready(function() {
-    jQuery('#menu{{$blockinfo.bid}}').navgoco({ accordion: false });
+    jQuery('#menu{{$blockinfo.bid}}').navgoco({ {{if isset($modvars.Zgoodies.navgoco_caretHtml) && $modvars.Zgoodies.navgoco_caretHtml}}caretHtml: '{{$modvars.Zgoodies.navgoco_caretHtml}}',{{/if}} {{if isset($modvars.Zgoodies.navgoco_openClass) && $modvars.Zgoodies.navgoco_openClass}}openClass: '{{$modvars.Zgoodies.navgoco_openClass}}',{{/if}}
+        {{if isset($modvars.Zgoodies.navgoco_save) && !$modvars.Zgoodies.navgoco_save}}save: false,{{else}}cookie: {name: 'navgoco{{$blockinfo.bid}}', expires: false, path: '/'},{{/if}}
+        slide: {duration: {{if isset($modvars.Zgoodies.navgoco_slideduration) && $modvars.Zgoodies.navgoco_slideduration}}{{$modvars.Zgoodies.navgoco_slideduration}}{{else}}400{{/if}}, easing: '{{if isset($modvars.Zgoodies.navgoco_slideeasing) && $modvars.Zgoodies.navgoco_slideeasing}}{{$modvars.Zgoodies.navgoco_slideeasing}}{{else}}swing{{/if}}'},
+        accordion: {{if isset($modvars.Zgoodies.navgoco_accordion) && $modvars.Zgoodies.navgoco_accordion}}true{{else}}false{{/if}}
+    });
 });
 </script>

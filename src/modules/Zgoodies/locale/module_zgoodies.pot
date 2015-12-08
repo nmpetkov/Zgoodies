@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula 1.x\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-12-01 22:06+0000\n"
+"POT-Creation-Date: 2015-12-08 14:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,8 +41,20 @@ msgstr ""
 msgid "Zgoodies Items Hooks"
 msgstr ""
 
-#: lib/Zgoodies/Controller/Admin.php:44
-msgid "Done! Updated the Zgoodies configuration."
+#: lib/Zgoodies/Api/Admin.php:21
+msgid "Information"
+msgstr ""
+
+#: lib/Zgoodies/Api/Admin.php:26
+msgid "Settings"
+msgstr ""
+
+#: lib/Zgoodies/Api/Admin.php:32
+msgid "Wiki"
+msgstr ""
+
+#: lib/Zgoodies/Controller/Admin.php:109
+msgid "Done! Updated configuration."
 msgstr ""
 
 #: templates/admin/info.tpl:4
@@ -61,16 +73,210 @@ msgstr ""
 msgid "jQuery Marquee"
 msgstr ""
 
-#: templates/admin/info.tpl:12 templates/admin/info.tpl:16
+#: templates/admin/info.tpl:12 templates/admin/info.tpl:17
+#: templates/admin/info.tpl:22 templates/admin/info.tpl:27
+#: templates/admin/info.tpl:32 templates/admin/info.tpl:37
 msgid "Purpose"
 msgstr ""
 
-#: templates/admin/info.tpl:13 templates/admin/info.tpl:17
+#: templates/admin/info.tpl:12
+msgid "A jQuery plugin to scroll text like the old traditional marquee."
+msgstr ""
+
+#: templates/admin/info.tpl:13 templates/admin/info.tpl:18
+#: templates/admin/info.tpl:23 templates/admin/info.tpl:28
+#: templates/admin/info.tpl:33 templates/admin/info.tpl:38
+#: templates/admin/modifyconfig.tpl:13 templates/admin/modifyconfig.tpl:62
 msgid "Project"
 msgstr ""
 
-#: templates/admin/info.tpl:15
+#: templates/admin/info.tpl:14 templates/admin/info.tpl:19
+#: templates/admin/info.tpl:24 templates/admin/info.tpl:29
+#: templates/admin/info.tpl:34 templates/admin/info.tpl:39
+msgid "Usage"
+msgstr ""
+
+#: templates/admin/info.tpl:14 templates/admin/info.tpl:19
+#: templates/admin/info.tpl:24 templates/admin/info.tpl:29
+#: templates/admin/info.tpl:34 templates/admin/info.tpl:39
+msgid "Create block of type"
+msgstr ""
+
+#: templates/admin/info.tpl:16
 msgid "jQuery Nivo Slider"
+msgstr ""
+
+#: templates/admin/info.tpl:17
+msgid "A jQuery plugin to make image slider."
+msgstr ""
+
+#: templates/admin/info.tpl:21
+msgid "jQuery EasyTree Menu"
+msgstr ""
+
+#: templates/admin/info.tpl:22 templates/admin/info.tpl:27
+#: templates/admin/info.tpl:32 templates/admin/info.tpl:37
+msgid "A jQuery plugin to make vertical menu, based on Zikula Menutree block."
+msgstr ""
+
+#: templates/admin/info.tpl:24 templates/admin/info.tpl:29
+#: templates/admin/info.tpl:34 templates/admin/info.tpl:39
+msgid "and select template"
+msgstr ""
+
+#: templates/admin/info.tpl:26 templates/admin/modifyconfig.tpl:11
+msgid "jQuery Navgoco Menu"
+msgstr ""
+
+#: templates/admin/info.tpl:31
+msgid "jQuery Nxeed Tree Menu"
+msgstr ""
+
+#: templates/admin/info.tpl:36 templates/admin/modifyconfig.tpl:60
+msgid "jQuery Vertical Accordion Menu"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:5
+msgid "Module settings"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:16 templates/admin/modifyconfig.tpl:73
+msgid "Save menu state"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:18 templates/admin/modifyconfig.tpl:75
+msgid "Yes (uses cookies)"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:19 templates/admin/modifyconfig.tpl:25
+#: templates/admin/modifyconfig.tpl:76 templates/admin/modifyconfig.tpl:83
+#: templates/admin/modifyconfig.tpl:90 templates/admin/modifyconfig.tpl:97
+#: templates/blocks/slider_modify.tpl:15 templates/blocks/slider_modify.tpl:99
+#: templates/blocks/slider_modify.tpl:106
+#: templates/blocks/slider_modify.tpl:113
+#: templates/blocks/slider_modify.tpl:120
+#: templates/blocks/slider_modify.tpl:127
+#: templates/blocks/slider_modify.tpl:134
+#: templates/blocks/marquee_modify.tpl:15
+#: templates/blocks/marquee_modify.tpl:71
+#: templates/blocks/marquee_modify.tpl:78
+#: templates/blocks/marquee_modify.tpl:85
+msgid "No"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:23
+msgid "Enable accordion mode"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:26 templates/admin/modifyconfig.tpl:96
+#: templates/blocks/slider_modify.tpl:14 templates/blocks/slider_modify.tpl:98
+#: templates/blocks/slider_modify.tpl:105
+#: templates/blocks/slider_modify.tpl:112
+#: templates/blocks/slider_modify.tpl:119
+#: templates/blocks/slider_modify.tpl:126
+#: templates/blocks/slider_modify.tpl:133
+#: templates/blocks/marquee_modify.tpl:14
+#: templates/blocks/marquee_modify.tpl:70
+#: templates/blocks/marquee_modify.tpl:77
+#: templates/blocks/marquee_modify.tpl:84
+msgid "Yes"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:30
+msgid "Caret HTML"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:33
+msgid "Raw html to inserted in the caret markup of the parent links."
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:37
+msgid "Open class"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:40
+msgid "CSS class to be added in open parent li."
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:44
+msgid "Slide duration"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:47
+msgid "Slide duration in milliseconds, default 400."
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:51
+msgid "Slide easing function"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:54
+msgid ""
+"Slide easing function (linear|swing) for the transition, default is swing."
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:65
+msgid "Skin"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:80
+msgid "Auto close"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:82
+msgid "Yes (only one sub-menu open at any time)"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:87
+msgid "Auto expand"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:89
+msgid "Yes (show number of links under each parent menu item)"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:94
+msgid "Show count"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:101
+msgid "Speed"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:103
+msgid "Slow"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:104
+msgid "Fast"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:108
+msgid "Event for activating menu"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:110
+msgid "Click"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:111
+msgid "Hover"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:115
+msgid "Hover delay"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:118
+msgid "Hover delay in milliseconds, default 300."
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:124
+msgid "Save"
+msgstr ""
+
+#: templates/admin/modifyconfig.tpl:125
+msgid "Cancel"
 msgstr ""
 
 #: templates/blocks/slider_modify.tpl:2 templates/blocks/marquee_modify.tpl:2
@@ -84,32 +290,6 @@ msgstr ""
 #: templates/blocks/slider_modify.tpl:12
 #: templates/blocks/marquee_modify.tpl:12
 msgid "Wrap block"
-msgstr ""
-
-#: templates/blocks/slider_modify.tpl:14 templates/blocks/slider_modify.tpl:89
-#: templates/blocks/slider_modify.tpl:96
-#: templates/blocks/slider_modify.tpl:103
-#: templates/blocks/slider_modify.tpl:110
-#: templates/blocks/slider_modify.tpl:117
-#: templates/blocks/slider_modify.tpl:124
-#: templates/blocks/marquee_modify.tpl:14
-#: templates/blocks/marquee_modify.tpl:65
-#: templates/blocks/marquee_modify.tpl:72
-#: templates/blocks/marquee_modify.tpl:79
-msgid "Yes"
-msgstr ""
-
-#: templates/blocks/slider_modify.tpl:15 templates/blocks/slider_modify.tpl:90
-#: templates/blocks/slider_modify.tpl:97
-#: templates/blocks/slider_modify.tpl:104
-#: templates/blocks/slider_modify.tpl:111
-#: templates/blocks/slider_modify.tpl:118
-#: templates/blocks/slider_modify.tpl:125
-#: templates/blocks/marquee_modify.tpl:15
-#: templates/blocks/marquee_modify.tpl:66
-#: templates/blocks/marquee_modify.tpl:73
-#: templates/blocks/marquee_modify.tpl:80
-msgid "No"
 msgstr ""
 
 #: templates/blocks/slider_modify.tpl:15
@@ -141,73 +321,81 @@ msgstr ""
 msgid "Slider content (HTML allowed)"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:41
+#: templates/blocks/slider_modify.tpl:40
 msgid "One or more valid images (image tags). They are source for slides."
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:42
+#: templates/blocks/slider_modify.tpl:41
 msgid ""
 "Title attribute is optional, and if exists - will show title on the "
 "respective slide."
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:46
+#: templates/blocks/slider_modify.tpl:45
+msgid "Images"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:49
+msgid "HTML captions"
+msgstr ""
+
+#: templates/blocks/slider_modify.tpl:55
 msgid "Nivo Slider Theme"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:54
+#: templates/blocks/slider_modify.tpl:63
 msgid "Effect"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:56
+#: templates/blocks/slider_modify.tpl:65
 msgid "One or more keywords (comma delimited list). Allowed: "
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:63
+#: templates/blocks/slider_modify.tpl:72
 msgid "Slices (for slice animations)"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:67
+#: templates/blocks/slider_modify.tpl:76
 msgid "Box columns (for box animations)"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:71
+#: templates/blocks/slider_modify.tpl:80
 msgid "Box rows (for box animations)"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:75
+#: templates/blocks/slider_modify.tpl:84
 msgid "Slide transition speed (ms)"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:79
+#: templates/blocks/slider_modify.tpl:88
 msgid "How long each slide will show (ms)"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:83
+#: templates/blocks/slider_modify.tpl:92
 msgid "Starting Slide (0 is first)"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:87
+#: templates/blocks/slider_modify.tpl:96
 msgid "Random start"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:94
+#: templates/blocks/slider_modify.tpl:103
 msgid "Next & Prev navigation"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:101
+#: templates/blocks/slider_modify.tpl:110
 msgid "1,2,3... navigation"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:108
+#: templates/blocks/slider_modify.tpl:117
 msgid "Thumbnails for navigation"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:115
+#: templates/blocks/slider_modify.tpl:124
 msgid "Stop on hover"
 msgstr ""
 
-#: templates/blocks/slider_modify.tpl:122
+#: templates/blocks/slider_modify.tpl:131
 msgid "Force manual transitions"
 msgstr ""
 
@@ -223,46 +411,46 @@ msgstr ""
 msgid "Marquee content (HTML allowed)"
 msgstr ""
 
-#: templates/blocks/marquee_modify.tpl:42
+#: templates/blocks/marquee_modify.tpl:47
 msgid "Marquee duration (ms)"
 msgstr ""
 
-#: templates/blocks/marquee_modify.tpl:46
+#: templates/blocks/marquee_modify.tpl:51
 msgid "Marquee gap (cahrs)"
 msgstr ""
 
-#: templates/blocks/marquee_modify.tpl:50
+#: templates/blocks/marquee_modify.tpl:55
 msgid "Marquee delay before start (ms)"
 msgstr ""
 
-#: templates/blocks/marquee_modify.tpl:54
+#: templates/blocks/marquee_modify.tpl:59
 msgid "Marquee direction"
 msgstr ""
 
-#: templates/blocks/marquee_modify.tpl:56
+#: templates/blocks/marquee_modify.tpl:61
 msgid "left"
 msgstr ""
 
-#: templates/blocks/marquee_modify.tpl:57
+#: templates/blocks/marquee_modify.tpl:62
 msgid "right"
 msgstr ""
 
-#: templates/blocks/marquee_modify.tpl:58
+#: templates/blocks/marquee_modify.tpl:63
 msgid "up"
 msgstr ""
 
-#: templates/blocks/marquee_modify.tpl:59
+#: templates/blocks/marquee_modify.tpl:64
 msgid "down"
 msgstr ""
 
-#: templates/blocks/marquee_modify.tpl:63
+#: templates/blocks/marquee_modify.tpl:68
 msgid "Marquee duplicated"
 msgstr ""
 
-#: templates/blocks/marquee_modify.tpl:70
+#: templates/blocks/marquee_modify.tpl:75
 msgid "Pause on hover"
 msgstr ""
 
-#: templates/blocks/marquee_modify.tpl:77
+#: templates/blocks/marquee_modify.tpl:82
 msgid "Pause on cycle"
 msgstr ""
