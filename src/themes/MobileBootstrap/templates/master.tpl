@@ -6,7 +6,7 @@
         <meta name="description" content="{$metatags.description}" />
         <meta name="keywords" content="{$metatags.keywords}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable = yes" />
-
+        {userloggedin assign="loggedin"}{user assign="username"}{usergetidfromname uname=$username assign="userid"}
         {servergetvar name='SERVER_NAME' default='' assign='server_name'}
         {assign var='bootstrappath' value=$themepath|cat:'/bootstrap'}
         {assign var='fontawesomepath' value=$themepath|cat:'/font-awesome'}
@@ -15,7 +15,7 @@
         <link href="{$bootstrappath}/css/overrides.css" rel="stylesheet" />
         <link href="{$fontawesomepath}/css/font-awesome.min.css" rel="stylesheet" />
 
-        {pageaddvar name='javascript' value='jquery-1.11.2'}
+        {pageaddvar name='javascript' value='jquery'}
         {pageaddvar name='javascript' value=$themepath|cat:'/javascript/theme_mobilebootstrap.js'}
 
         {* Scroll to top start https://github.com/markgoodyear/scrollup ==> *}{pageaddvar name='javascript' value=$themepath|cat:'/javascript/scrollup/jquery.scrollUp.min.js'}
@@ -120,7 +120,7 @@ jQuery(document).ready(function () {
                             <ul class="dropdown-menu">
                             {checkpermissionblock component='.*' instance='.*' level=ACCESS_ADMIN}
                                 <li><a href="{modurl modname='Admin' type='admin' func='adminpanel'}">{gt text='Administration'}</a></li>
-                                {/checkpermissionblock}
+                            {/checkpermissionblock}
                                 <li><a href="{modurl modname='Users' type='user' func='main'}">{gt text="My account"}</a></li>			   
                                 <li><a href="{modurl modname='Profile' type='user' func='view'}">{gt text="My profile"}</a></li>				
                                 <li class="divider"></li>
@@ -155,12 +155,14 @@ jQuery(document).ready(function () {
                     {if empty($bl_left) && empty($bl_right)}
                         <div class="col-md-12">
                             {blockposition name=center}
+                            {blockposition name=centerright}
                             {blockposition name=mobile}
                             {$maincontent}
                         </div>
                     {else}
                         <div class="col-md-9">
                             {blockposition name=center}
+                            {blockposition name=centerright}
                             {blockposition name=mobile}
                             {$maincontent}
                         </div>
@@ -171,6 +173,7 @@ jQuery(document).ready(function () {
                             </div>
                         </div>
                     {/if}
+                    {blockposition name=centerdownmobile}
                 {else}
                     {blockposition name=left assign='bl_left'}
                     {if empty($bl_left)}
@@ -187,6 +190,7 @@ jQuery(document).ready(function () {
                             </div>
                         </div>
                     {/if}
+                    {blockposition name=centerdownmobile}
                 {/if}
             </div><!--/row-fluid-->
         </div><!--/container-fluid-->
@@ -219,6 +223,9 @@ jQuery(document).ready(function () {
         {if $server_name == $alt_domain}{assign var='site_style' value=$alt_sitestyle}{else}{assign var='site_style' value=$sitestyle}{/if}
         {if $site_style && file_exists($themepath|cat:'/'|cat:$site_style)}{* typically parts from main site style and overrides *}
             {pageaddvar name="stylesheet" value=$themepath|cat:"/"|cat:$site_style}
+        {/if}
+        {if file_exists($themepath|cat:'/templates/includes/body_end.tpl')}{* specific include, for example javascripts *}
+            {include file='includes/'|cat:'body_end.tpl'}
         {/if}
     </body>
 </html>
